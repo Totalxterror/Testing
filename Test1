@@ -1,0 +1,276 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Mining Champions") -- Creates the window
+local b = w:CreateFolder("Center Inf Rocks") -- Creates the folder(U will put here your buttons,etc)
+
+b:Toggle("Starter Inf Rock",function(bool)
+    shared.toggle = bool
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Center_Ores"]["Ore_1"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+        end
+    end
+end)
+
+b:Toggle("Grassland Inf Rock",function(bool1)
+    shared.toggle1 = bool1
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle1 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Center_Ores"]["Ore_2"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+        end
+    end
+end)
+
+b:Toggle("Desert Inf Rock",function(bool2)
+    shared.toggle2 = bool2
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle2 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Center_Ores"]["Ore_3"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+        end
+    end
+end)
+
+b:Toggle("Jungle Inf Rock",function(bool3)
+    shared.toggle3 = bool3
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle3 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Center_Ores"]["Ore_4"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+        end
+    end
+end)
+
+b:Toggle("Frozen Inf Rock",function(bool4)
+    shared.toggle4 = bool4
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle4 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Center_Ores"]["Ore_5"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+        end
+    end
+end)
+
+b:Toggle("Space Inf Rock",function(bool5)
+    shared.toggle5 = bool5
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle5 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Center_Ores"]["Ore_6"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+        end
+    end
+end)
+
+local b = w:CreateFolder("Gem Rocks") -- Creates the folder(U will put here your buttons,etc)
+
+b:Toggle("Starter Gem Rock",function(bool6)
+    shared.toggle6 = bool6
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle6 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Island_1"]["Gem_1"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+		end
+    end
+end)
+
+b:Toggle("Grassland Gem Rock",function(bool7)
+    shared.toggle7 = bool7
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle7 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Island_2"]["Gem_2"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+		end
+    end
+end)
+
+b:Toggle("Desert Gem Rock",function(bool8)
+    shared.toggle8 = bool8
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle8 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Island_3"]["Gem_3"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+		end
+    end
+end)
+
+b:Toggle("Jungle Gem Rock",function(bool9)
+    shared.toggle9 = bool9
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle9 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Island_4"]["Gem_4"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+		end
+    end
+end)
+
+b:Toggle("Frozen Gem Rock",function(bool10)
+    shared.toggle10 = bool10
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle10 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Island_5"]["Gem_5"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+		end
+    end
+end)
+
+b:Toggle("Space Gem Rock",function(bool11)
+    shared.toggle11 = bool11
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle11 then
+           local oh1 = game:GetService("Workspace").Resources.Ores["World_1"]["Island_6"]["Gem_6"]
+			game:GetService("ReplicatedStorage").Events.Server.RequestSwing:InvokeServer(oh1)
+		end
+    end
+end)
+
+local b = w:CreateFolder("Eggs") -- Creates the folder(U will put here your buttons,etc)
+
+b:Toggle("Starter Egg",function(bool12)
+    shared.toggle12 = bool12
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle12 then
+        	  local oh1 = "1"
+			  local oh2 = 3
+			  game:GetService("ReplicatedStorage").Events.Server.BuyEgg:InvokeServer(oh1, oh2)
+		end
+    end
+end)
+
+b:Toggle("Gold Egg",function(bool13)
+    shared.toggle13 = bool13
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle13 then
+        	  local oh1 = "2"
+			  local oh2 = 3
+			  game:GetService("ReplicatedStorage").Events.Server.BuyEgg:InvokeServer(oh1, oh2)
+		end
+    end
+end)
+
+b:Toggle("Grassland Egg",function(bool14)
+    shared.toggle14 = bool14
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle14 then
+        	  local oh1 = "3"
+			  local oh2 = 3
+			  game:GetService("ReplicatedStorage").Events.Server.BuyEgg:InvokeServer(oh1, oh2)
+		end
+    end
+end)
+b:Toggle("Desert Egg",function(bool15)
+    shared.toggle15 = bool15
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle15 then
+        	  local oh1 = "4"
+			  local oh2 = 3
+			  game:GetService("ReplicatedStorage").Events.Server.BuyEgg:InvokeServer(oh1, oh2)
+		end
+    end
+end)
+
+b:Toggle("Jungle Egg",function(bool16)
+    shared.toggle16 = bool16
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle16 then
+        	  local oh1 = "5"
+			  local oh2 = 3
+			  game:GetService("ReplicatedStorage").Events.Server.BuyEgg:InvokeServer(oh1, oh2)
+		end
+    end
+end)
+
+b:Toggle("Frozen Egg",function(bool17)
+    shared.toggle17 = bool17
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle17 then
+        	  local oh1 = "6"
+			  local oh2 = 3
+			  game:GetService("ReplicatedStorage").Events.Server.BuyEgg:InvokeServer(oh1, oh2)
+		end
+    end
+end)
+
+b:Toggle("Space Egg",function(bool18)
+    shared.toggle18 = bool18
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle18 then
+        	  local oh1 = "7"
+			  local oh2 = 3
+			  game:GetService("ReplicatedStorage").Events.Server.BuyEgg:InvokeServer(oh1, oh2)
+		end
+    end
+end)
+
+
+
+local b = w:CreateFolder("Credits") -- Creates the folder(U will put here your buttons,etc)
+b:Toggle("Scripts: Total",function(bool19)
+    shared.toggle19 = bool19
+end)
+
+spawn(function()
+    while wait() do
+        if shared.toggle18 then
+			print("Nub")
+		end
+    end
+end)
